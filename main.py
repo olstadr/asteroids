@@ -23,6 +23,7 @@ Screen height: 720
     while True:
         screen.fill("black")
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
 
         for event in pygame.event.get():
